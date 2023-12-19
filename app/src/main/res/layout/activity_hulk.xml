@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#30d5c8"
+    tools:context=".hulk">
+    <ImageView
+        android:id="@+id/imageViews"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:src="@drawable/hulk"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/imageViews"
+        android:id="@+id/movieTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Hulk"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/movieTitle"
+        android:id="@+id/movieTitles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text=" Parlak bir bilim adamı olan Bruce Banner’ın başına gelenleri aktarmaktadır. Ailesi ile ilgili belirli belirsiz bir geçmişi olan Bruce Banner, hayatının büyük bir çoğunluğunu laboratuvarında geçirmektedir. "
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/movieTitles"
+        android:id="@+id/movieTitleq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="IMDB 5.7"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+    <EditText
+        app:layout_constraintTop_toBottomOf="@+id/movieTitleq"
+        android:id="@+id/editTextDistance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Yorum yaz"
+        android:textColor="#000"
+
+        android:layout_margin="16dp" />
+    <Button
+        android:textColor="#000"
+        android:id="@+id/buttonyorum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="gonder"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDistance"
+        android:layout_margin="16dp" />
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/buttonyorum"
+
+        android:id="@+id/textyorum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yorumlar"
+        android:textSize="18sp"
+        android:layout_centerInParent="true"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

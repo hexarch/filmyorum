@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/benefsaneyim"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:src="@drawable/benefsaneyim"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/hizliveofkeli"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp" />
+
+    <ImageView
+        android:id="@+id/hizliveofkeli"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:src="@drawable/hizliveofkeli"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/benefsaneyim"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <ImageView
+        android:id="@+id/hulk"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:src="@drawable/hulk"
+        app:layout_constraintTop_toBottomOf="@id/benefsaneyim"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/karayipkorsanlar"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp" />
+
+    <ImageView
+        android:id="@+id/karayipkorsanlar"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:src="@drawable/karayipkorsanlar"
+        app:layout_constraintTop_toBottomOf="@id/hizliveofkeli"
+        app:layout_constraintStart_toEndOf="@id/hulk"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <ImageView
+        android:id="@+id/limitless"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:src="@drawable/limitless"
+        app:layout_constraintTop_toBottomOf="@id/karayipkorsanlar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/matrix"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp" />
+
+    <ImageView
+        android:id="@+id/matrix"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:src="@drawable/matrix"
+        app:layout_constraintTop_toBottomOf="@id/hizliveofkeli"
+        app:layout_constraintStart_toEndOf="@id/limitless"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <ImageView
+        android:id="@+id/ejder"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ejder"
+        app:layout_constraintTop_toBottomOf="@id/matrix"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/transformers"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp" />
+
+    <ImageView
+        android:id="@+id/transformers"
+        android:layout_width="250dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/transformers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/ejder"
+        app:layout_constraintTop_toBottomOf="@id/matrix" />
+    <Button
+        android:id="@+id/sil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yorumları Sil"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+
+        />
+    <Button
+        android:id="@+id/animasyon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animasyon"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ejder"
+        />
+    <Button
+        android:id="@+id/aksiyon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aksiyon"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/animasyon"
+        />
+    <Button
+        android:id="@+id/bilim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bilim Kurgu"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aksiyon"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
